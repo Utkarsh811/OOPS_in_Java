@@ -1,0 +1,70 @@
+PLATFORM INDEPENDENT
+MULTI THREADING
+GARBAGE COLLECTION
+PORTABLE 
+SECURE-: because java has no pointers and follow oops
+
+
+Java has its own run time environment 
+java code -> compiler(javac compiler)-> bytecode
+Bytecode run by JVM -> MACHINE CODE  now run by OS
+
+int,char,boolean,float,double ->primitive datatypes
+class is a blueprint
+
+A class can have variables, methods,classes.
+A constructor is a method which has no return type and the constructor name is same as the class name.
+Once a constructor is declared private, it cannot be accessed from outside the class. So, creating objects from outside the class is prohibited using the private constructor.
+
+Here, we are creating the object inside the same class. Hence, the program is able to access the constructor. To learn more, visit Java Implement Private Constructor.
+
+However, if we want to create objects outside the class, then we need to declare the constructor as public.
+
+Static
+variables are of static and non static
+>static variables are class variables . variables that are belong to class and any object can access it within the class.
+>non static variables are instance or object variables that belong to the object or instannce.
+>static variables cannot be induced directly inside method.
+>static does memory management
+
+static can call -> static
+static->non-static noooooooooo it cannot be done
+non-static->static
+non-static->non-static
+
+Methods, variables, and constructors that are declared private can only be accessed within the declared class itself.
+
+Private access modifier is the most restrictive access level. Class and interfaces cannot be private.
+
+Variables that are declared private can be accessed outside the class, if public getter methods are present in the class.
+
+Using the private modifier is the main way that an object encapsulates itself and hides data from the outside world.
+
+11-02-2023
+classes can have variables,methods,constructors and class inside.
+
+normally variables,methods,classes can be of 3types-:
+eg for variable it can be 
+class variable -> static
+instance variable -> non-static
+local variable
+
+this keyword is used to differentiate class variable and instance variable.
+>>this as a constructor.
+>>this as a parameter
+
+There are 2 types of relationships
+HAS A (ASSOCIATION)
+IS A(INHERITANCE)
+
+
+
+
+
+
+
+
+
+
+
+
