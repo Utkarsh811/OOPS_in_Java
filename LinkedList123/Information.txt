@@ -1,0 +1,29 @@
+Some limitations of Arrays-:
+1.FIxed size issue.
+2. Insertion/Deletion operation at middle location is costly
+3. Linear data structure
+4. elements are not present in contiguous structure
+5. For implementing stacks and queues we use arrays and linked list
+
+*Doubly linked list is very ,uch useful in real life
+stacks and queues, Image Processing, Brower nagivation tab, Music Player,HashMap and HashSet
+
+
+public class SINGLYlinkedlist{
+
+    class Node
+    {
+        int data;
+        Node next;
+
+
+        public Node(int data)
+        {
+            this.data=data;
+            this.next=null;
+        }
+    }
+}
+
+Head is pointing to the 1st Node
+Tail is pointing to the last node

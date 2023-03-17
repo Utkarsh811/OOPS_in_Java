@@ -1,0 +1,31 @@
+Relationship between 2 classes
+How to connect 2 classes
+Has a Relationship
+class A{
+
+}
+class B{
+    Object of class A
+    A objecta =new A();
+}
+
+B HAS A 
+
+
+
+There are 2 types of Relationship
+HAS A(ASSOCIATION ) by making ojects of some class in other class it means b has a 
+IS A(INHERITANCE) by extends keyword   b is a 
+
+
+ASSOCIATION(HAS A) RELATIONSHIP HAS 2 types
+1. WEAK ASSOCIATION  -> AGGREGATION
+2. STRONG ASSOCIATION -> COMPOSITION
+
+
+INHERITANCE
+1. SINGLE  B->A
+2. MULTILEVEL   D->C->B->A
+3. MULTIPLE  A->B && A->C   JAVA NOT ALLOW
+4.HIERARCHICAL  B->A && C->A
+5. HYBRID     JAVA NOT ALLOW
