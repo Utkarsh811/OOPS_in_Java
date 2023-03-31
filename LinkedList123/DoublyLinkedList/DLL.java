@@ -63,7 +63,7 @@ public class DLL  {
         {
             if(travpointer.get_leftnext()==null)
             {
-                System.out.print(travpointer.get_data());
+                System.out.println(travpointer.get_data());
                 travpointer=travpointer.get_leftnext();
 
             }
@@ -74,6 +74,41 @@ public class DLL  {
 
         }
         
+    }
+
+
+    //insert
+    public void insert(int loc,int value)
+    {
+        //create new node
+        Node newnode=new Node();
+        newnode.set_data(value);
+        //at begining
+        if(loc==1)
+        {
+            newnode.NodeInsertionLocation1(newnode);
+
+
+
+        }
+        //at last
+        else if(loc==this.size + 1)
+        {
+            newnode.NodeInsertionLocationAtEnd(newnode);
+
+        }
+        //at any position
+        else
+        {
+            newnode.NodeInsertionLocationAtPosition(newnode,loc);
+
+        }
+        this.size++;
+
+
+
+
+
     }
     
 

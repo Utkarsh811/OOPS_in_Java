@@ -28,6 +28,10 @@ public class Node extends DLL {
     {
         return this.data;
     }
+    public void set_data(int val)
+    {
+        this.data=val;
+    }
 
     // Node methods
     public void push(int value)
@@ -70,6 +74,36 @@ public class Node extends DLL {
 
         }
         super.set_size();
+    }
+
+    public void NodeInsertionLocation1(Node newnode)
+    {
+        
+        newnode.leftnext=DLL.Head;
+        DLL.Head.rightnext=newnode;
+        DLL.Head=newnode;
+
+
+    }
+    public void NodeInsertionLocationAtEnd(Node newnode)
+    {
+        newnode.rightnext=DLL.Tail;
+        DLL.Tail.leftnext=newnode;
+        DLL.Tail=newnode;
+
+    }
+    public void NodeInsertionLocationAtPosition(Node newnode,int loc)
+    {
+        Node travpointer=DLL.Head;
+        for(int i=1;i<loc-1;i++)
+        {
+            travpointer=travpointer.leftnext;
+
+        }
+        newnode.leftnext=travpointer.leftnext;
+        travpointer.leftnext.rightnext=newnode;
+        travpointer.leftnext=newnode;
+        newnode.rightnext=travpointer;
     }
     
 

@@ -1,4 +1,4 @@
-package LinkedList123;
+package LinkedList123.SinglyLinkedList;
 // Singly linked list is just a few nodes interlinked to each other
 public class Node extends SLL {
     int data;

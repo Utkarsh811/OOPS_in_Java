@@ -9,8 +9,10 @@ public class Main {
         String[] instructions=
         {
             "For creating list type -:PUSH 123 here 123 is element",
-            "For pushing elements in created list type -: CREATE"
+            "For pushing elements in created list type -: CREATE",
+            "For size Type-: SIZE"
         };
+        for(String a:instructions){        System.out.println(a);}
 
         ArrayList<Integer> arr=new ArrayList<>();
         int value=0;
@@ -48,6 +50,22 @@ public class Main {
             {
                 System.out.println("Showing...");
                 dLL1.print();
+            }
+
+            if(cmd.startsWith("SIZE"))
+            {
+                
+                System.out.println(dLL1.get_Size());
+            }
+
+            if(cmd.startsWith("INSERT"))//INSERT 2,34 INSERT LOC,VALUE
+            {
+                
+                String[] substr=cmd.substring(7).split(",",2);
+                System.out.println("Inserting "+ substr[1]+" at "+ substr[0]+"...");
+                dLL1.insert(Integer.parseInt(substr[0]),Integer.parseInt(substr[1]));
+
+
             }
             cmd=sc.nextLine();
 
