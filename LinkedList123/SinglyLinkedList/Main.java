@@ -7,20 +7,26 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("INSTRUCTIONS");
 
-        String[] strArr = { "To push the data into Linked List, Please Type-: Push Data eg(Push 23) ",
+        String[] strArr = { "To push the data into Linked List, Please Type-: PUSH Data eg(PUSH 23) ",
                 "To end Type-: END", "To view List Type-: PRINT", "To Commit change and create list TYPE-: CREATE ",
                 "To Insert into the list TYPE-:  INSERT Location,value  eg INSERT 2,345" ,
-            "To delete the node from the Type-: DELETE loc eg-:  DELETE 4"};
+            "To delete the node from the Type-: DELETE loc eg-:  DELETE 4",
+            "2->4->5",
+                "Deleting positions are 1, 2, 3",
+                "Inserting positions are 1, 2, 3, 4"
+        };
 
         for (String a : strArr) {
             System.out.println(a);
         }
+
+        System.out.println();
         String strng = sc.nextLine();
         ArrayList<Integer> arr = new ArrayList<>();
         SLL sll = null;
 
         while (!strng.startsWith("END")) {
-            if (strng.startsWith("Push")) {
+            if (strng.startsWith("PUSH")) {
                 String nstr = strng.substring(5);
 
                 int dta = Integer.parseInt(nstr);
@@ -36,6 +42,7 @@ public class Main {
             if (strng.startsWith("CREATE")) {
                 System.out.println("Creating...");
                 sll = new SLL(arr);
+                arr.clear();
 
             }
             if (strng.startsWith("SIZE")) {

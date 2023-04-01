@@ -65,6 +65,11 @@ IS A(INHERITANCE)
 
 
 
+JAVA SYNTAX
+String val="300";
+int a=Integer.parseInt(val);
+
+
 
 
 

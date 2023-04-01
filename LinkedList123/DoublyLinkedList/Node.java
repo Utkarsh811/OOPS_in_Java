@@ -62,7 +62,7 @@ public class Node extends DLL {
             this.data=value;
             Tail.leftnext=this;
            
-            this.rightnext=Head;
+            this.rightnext=Tail;
             this.leftnext=null;
             Tail=this;
 
@@ -75,6 +75,8 @@ public class Node extends DLL {
         }
         super.set_size();
     }
+
+    //INSERTIONS DEFENATIONS
 
     public void NodeInsertionLocation1(Node newnode)
     {
@@ -104,6 +106,49 @@ public class Node extends DLL {
         travpointer.leftnext.rightnext=newnode;
         travpointer.leftnext=newnode;
         newnode.rightnext=travpointer;
+    }
+
+
+
+    //DELETIONS DEFINITIONS
+
+    public void  DeletionAtBegining()
+    {
+        System.out.println("The "+ super.Head.data + " is deleted");
+        if(super.get_Size()==1)
+        {
+            super.Head=null;
+        }
+        else{
+        super.Head=super.Head.leftnext;
+        super.Head.rightnext=null;
+        }
+
+
+
+    }
+    public void DeletionAtEnd()
+    {
+        System.out.println("The "+super.Tail.data+" is deleted");
+       // System.out.println(super.Tail.rightnext.data +","+super.Tail.leftnext);
+        
+        super.Tail=super.Tail.rightnext;
+        super.Tail.leftnext=null;
+        
+    }
+    public void DeletionAtPosition(int loc)
+    {
+        
+        Node travpointer=super.Head;
+        for(int i=1;i<loc;i++)
+        {
+            travpointer=travpointer.leftnext;
+        }
+        System.out.println("The "+travpointer.data+" is deleted");
+        travpointer.rightnext.leftnext=travpointer.leftnext;
+        travpointer.leftnext.rightnext=travpointer.rightnext;
+
+
     }
     
 

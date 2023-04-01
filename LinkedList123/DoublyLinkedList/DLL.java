@@ -110,6 +110,26 @@ public class DLL  {
 
 
     }
+
+    public void delete(int location)
+    {
+        Node nd=new Node();
+        if (location == 1) {
+            nd.DeletionAtBegining();
+    
+
+        } else if (location == this.size) {
+            System.out.println("from end");
+            nd.DeletionAtEnd();
+
+        } else {
+            nd.DeletionAtPosition(location);
+
+        }
+        this.size--;
+   
+        
+    }
     
 
 
