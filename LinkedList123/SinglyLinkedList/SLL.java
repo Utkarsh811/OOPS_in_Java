@@ -78,55 +78,44 @@ public class SLL {
         this.size++;
     }
 
-    public int delete(int loc)
-    {
-        int delval=0;
-        //at begining
+    public int delete(int loc) {
+        int delval = 0;
+        // at begining
 
-        if(loc==1)
-        {
-            delval=this.Head.data;
-            
-            this.Head=this.Head.next;
-        }
-        else if(loc==this.getsize())
-        {
-            Node pointy=this.Head;
-            int counter=1;
-            while(pointy!=null)
-            {
-                if(counter==loc-1)
-                {
+        if (loc == 1) {
+            delval = this.Head.data;
+
+            this.Head = this.Head.next;
+        } else if (loc == this.getsize()) {
+            Node pointy = this.Head;
+            int counter = 1;
+            while (pointy != null) {
+                if (counter == loc - 1) {
                     break;
                 }
-                pointy=pointy.next;
+                pointy = pointy.next;
                 counter++;
 
             }
-            delval=this.Tail.data;
-            this.Tail=pointy;
-            this.Tail.next=null;
+            delval = this.Tail.data;
+            this.Tail = pointy;
+            this.Tail.next = null;
 
         }
 
-
-        else{
-            Node pointytrav=this.Head;
-            int counter=1;
-            while(pointytrav!=null)
-            {
-                if(counter==loc-1)
-                {
+        else {
+            Node pointytrav = this.Head;
+            int counter = 1;
+            while (pointytrav != null) {
+                if (counter == loc - 1) {
                     break;
                 }
-                pointytrav=pointytrav.next;
+                pointytrav = pointytrav.next;
                 counter++;
 
             }
-            delval=pointytrav.next.data;
-            pointytrav.next=pointytrav.next.next;
-            
-
+            delval = pointytrav.next.data;
+            pointytrav.next = pointytrav.next.next;
 
         }
         this.size--;

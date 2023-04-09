@@ -1,0 +1,6 @@
+Why Lambdas
+->Enables funcional programming.We used to write object oriented programming in java.Using
+lambdas ,we can use functional programming in java.
+->Enables parallel processing,
+->easier to use API and libraries.
+->Readable and concise code.
