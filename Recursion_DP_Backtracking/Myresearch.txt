@@ -1,0 +1,27 @@
+Recursion-: Principle of mathematical induction
+DP
+Backtracking
+
+f(x)=x^x
+assuming f(k)=k^k assuming this statement is truth
+now prove f(k+1)=k+1 ^ k+1
+and prove f(1)=1^1
+
+to frame recursion we should have do high level thinking
+
+
+
+
+void fun(n)
+{
+    //whatever be here processed when callstack goes up 
+
+    fun(n-1)
+    //whatever be here processed when callstack goes down or returning
+
+}
+main()
+{
+    fun(n);
+}
+

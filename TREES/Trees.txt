@@ -1,0 +1,45 @@
+In linked list ,each node can link to one node.
+In trees each node can link to multiple nodes.
+Trees does not have cycles.
+In trees no 2 nodes can link to same node.
+
+The Generic trees are the N-ary trees which have the following properties: 
+
+            1. Many children at every node.
+
+            2. The number of nodes for each node is not known in advance.
+
+Efficient Approach:  
+First child / Next sibling representation
+
+ In the first child/next sibling representation, the steps taken are: 
+
+At each node-link the children of the same parent(siblings) from left to right.
+
+Remove the links from parent to all children except the first child.
+Since we have a link between children, we do not need extra links from parents to all the children. This representation allows us to traverse all the elements by starting at the first child of the parent.
+ 24
+10
+20
+50
+-1
+60
+-1
+-1
+30
+70
+-1
+80
+110
+-1
+120
+-1
+-1
+90
+-1
+-1
+40
+100
+-1
+-1
+-1

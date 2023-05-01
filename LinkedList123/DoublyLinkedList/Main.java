@@ -39,7 +39,7 @@ public class Main {
       }
       // creation of linked list by the elements which are pushed
       if (cmd.startsWith("CREATE")) {
-        // creation of doubly Linked List
+        // creation of doubly Linked L
         // Creating object of class DLL
 
         dLL1 = new DLL(arr);
@@ -56,9 +56,7 @@ public class Main {
         System.out.println(dLL1.get_Size());
       }
 
-      if (
-        cmd.startsWith("INSERT")
-      ) { // INSERT 2,34 INSERT LOC,VALUE
+      if (cmd.startsWith("INSERT")) { // INSERT 2,34 INSERT LOC,VALUE
         String[] substr = cmd.substring(7).split(",", 2);
         System.out.println(
           "Inserting " + substr[1] + " at " + substr[0] + "..."
@@ -66,9 +64,7 @@ public class Main {
         dLL1.insert(Integer.parseInt(substr[0]), Integer.parseInt(substr[1]));
       }
 
-      if (
-        cmd.startsWith("DELETE")
-      ) { // DELETE loc, DELETE 2
+      if (cmd.startsWith("DELETE")) { // DELETE loc, DELETE 2
         String substr = cmd.substring(7);
         int loc = Integer.parseInt(substr);
         dLL1.delete(loc);

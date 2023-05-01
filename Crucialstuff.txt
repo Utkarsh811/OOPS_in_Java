@@ -35,3 +35,10 @@ for(Map.Entry<Integer,Integer> e:map.entrySet()){
 }
 
 https://toolsqa.com/java/exception-handling-2/#:~:text=Compile-time%20errors%20are%20those%20preventing%20the%20code%20from,no%20semicolon%20at%20the%20end%20of%20a%20statement.
+
+
+
+ if (Arrays.toString(vowels).contains(String.valueOf(a.charAt(0)))) This line is important to know how to check that if something exists in an array or not.
+
+Integer.MIN.Value
+ STREAM,LAMBDA

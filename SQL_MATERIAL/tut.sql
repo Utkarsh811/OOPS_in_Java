@@ -1,0 +1,1 @@
+create table mss(size int, name varchar2(20));
