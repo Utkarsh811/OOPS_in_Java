@@ -3,6 +3,10 @@ a.equals(b)  check if both strings are equal or not
 a.equalsIgnoreCase(b)   check if both strings are equal or not  but it is case insensitive.
 }
 
+**Converting character to integer
+Integer.parseInt(String.valueOf(str.charAt(0)))
+Do not use Integer.valueOf() or (int). They will convert it into ascii value
+
 Sorting ArrayList{
 ArrayList is the class provided in the Collection framework. In Java, the collection framework is defined in java.util package. ArrayList is used to dynamically stores the elements.
 Collections.sort(arrayobject)  in ascending bydefault
@@ -42,3 +46,8 @@ https://toolsqa.com/java/exception-handling-2/#:~:text=Compile-time%20errors%20a
 
 Integer.MIN.Value
  STREAM,LAMBDA
+
+
+
+
+ .substring(1st index, last index) eg substring(1,5) substring from 1 to 4

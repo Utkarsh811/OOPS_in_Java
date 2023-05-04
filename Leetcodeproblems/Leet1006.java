@@ -4,46 +4,56 @@ import java.util.*;
 
 public class Leet1006 {
 
-  enum operators {
+  enum operat {
     mul,
     div,
     plus,
     minus,
   }
 
-  static operators op = operators.mul;
+  static int res = -1;
+  static operat op = operat.mul;
 
-  public static long print(long val) {
-    if (val == 1) {
+  public static int print(int n) {
+    if (n < 1) {
+      System.out.println("the res is" + res);
       return 1;
     }
-    long ret = print(val - 1);
-    long res = 0;
-
-    switch (op) {
-      case mul:
-        res = ret * val;
-        op = operators.div;
-        break;
-      case div:
-        res = ret / val;
-        op = operators.plus;
-        break;
-      case plus:
-        res = ret + val;
-        op = operators.minus;
-        break;
-      case minus:
-        res = ret - val;
-        op = operators.mul;
-        break;
+    if (res == -1) {
+      res = res * n * -1;
+    } else {
+      switch (op) {
+        case mul:
+          op = operat.div;
+          res = res * n;
+          System.out.println(res);
+          break;
+        case div:
+          op = operat.plus;
+          res = res / n;
+          System.out.println(res);
+          break;
+        case plus:
+          op = operat.minus;
+          res = res + n;
+          System.out.println(res);
+          break;
+        case minus:
+          op = operat.mul;
+          res = res - n;
+          System.out.println(res);
+          break;
+      }
     }
+
+    print(n - 1);
     return res;
   }
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    long val = sc.nextLong();
-    System.out.println(print(val));
+    int val = sc.nextInt();
+
+    System.out.println("the value is" + print(val));
   }
 }

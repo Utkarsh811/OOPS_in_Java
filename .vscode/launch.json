@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GetKeyPadCount",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.GetKeyPadCount",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "GetKeyPadCodes",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.GetKeyPadCodes",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "prac",
+            "request": "launch",
+            "mainClass": "prac",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "SubsequenceOfString",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.SubsequenceOfString",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "TowerOfHanoi",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.TowerOfHanoi",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "ZigZag",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.ZigZagRecursionPattern.ZigZag",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "pow",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.pow",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "example",
             "request": "launch",
             "mainClass": "Recursion_DP_Backtracking.example",

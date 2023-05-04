@@ -26,6 +26,6 @@ public class Factorial {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     long val = sc.nextLong();
-    System.out.println(fact(val));
+    System.out.println("the val is->" + fact(val));
   }
 }
