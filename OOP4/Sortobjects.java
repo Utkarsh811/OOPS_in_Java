@@ -6,9 +6,13 @@ class markscomparator implements Comparator<Sortobjects> {
 
   @Override
   public int compare(Sortobjects ob1, Sortobjects ob2) {
-    if (ob1.get_marks(ob1) == ob2.get_marks(ob2)) return 0; else if (
-      ob1.get_marks(ob1) > ob2.get_marks(ob2)
-    ) return 1; else return -1; // ascending
+    if (ob1.get_marks(ob1) == ob2.get_marks(ob2)) {
+      return 0;
+    } else if (ob1.get_marks(ob1) > ob2.get_marks(ob2)) {
+      return 1;
+    } else {
+      return -1;
+    } // ascending
   }
 }
 

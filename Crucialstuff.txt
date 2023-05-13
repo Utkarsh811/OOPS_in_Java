@@ -7,12 +7,25 @@ a.equalsIgnoreCase(b)   check if both strings are equal or not  but it is case i
 Integer.parseInt(String.valueOf(str.charAt(0)))
 Do not use Integer.valueOf() or (int). They will convert it into ascii value
 
+
+**Converting arraylist to array use  
+ArrayList<Integer> arr=new ArrayList<>()
+arr.toArray()
+**
+
 Sorting ArrayList{
 ArrayList is the class provided in the Collection framework. In Java, the collection framework is defined in java.util package. ArrayList is used to dynamically stores the elements.
 Collections.sort(arrayobject)  in ascending bydefault
 Collections.sort(arrayobject, Collections.reverseOrder());  in descending reverseOrder
 }
 
+
+**
+ String[] arr = new String[60];
+    Arrays.fill(arr, "0");
+    List<String> nrr = Arrays.asList(arr);
+    System.out.println(nrr);
+**
 
 Soring Arrays{
 Arrays.sort(arr)  in ascending
@@ -46,8 +59,110 @@ https://toolsqa.com/java/exception-handling-2/#:~:text=Compile-time%20errors%20a
 
 Integer.MIN.Value
  STREAM,LAMBDA
+ Java formatted printf
+ toString()
 
 
 
 
  .substring(1st index, last index) eg substring(1,5) substring from 1 to 4
+
+
+
+ How to sort a HashMap by value in java
+ "https://www.digitalocean.com/community/tutorials/sort-hashmap-by-value-java"
+ 
+
+
+ 
+import java.util.*;
+class TestClass {
+    public static void findwinner(String str,LinkedHashMap<String,Integer> map)
+    {
+        String[] arr=str.split(" ",0);
+        //System.out.println(Arrays.toString(arr));
+        int val1=Integer.parseInt(arr[1]);
+        int val2=Integer.parseInt(arr[3]);
+        int gd=val1-val2;
+        if(gd>0)
+        {
+            map.put(arr[0],gd);
+        }
+        //System.out.println(map);
+
+
+        if(map.size()==0)
+        {
+            System.out.println("-1");
+        }
+        else
+        {
+            ArrayList<Integer> list=new ArrayList<>();
+            for(Map.Entry<String,Integer> mp:map.entrySet())
+            {
+                list.add(mp.getValue());
+
+            }
+            Collections.sort(list,Collections.reverseOrder());
+            HashMap<Integer,Integer> sap=new HashMap<>();
+            for(int a:list)
+            {
+                if(sap.containsKey(a))
+                {
+                    int val=sap.get(a);
+                    sap.put(a,val+1);
+                }
+                else
+                {
+                    sap.put(a,1);
+                }
+            }
+            //sort sap by values
+            ArrayList<Integer> lit=new ArrayList<>();
+            for(Map.Entry<Integer,Integer> e:sap.entrySet())
+            {
+                lit.add(e.getValue());
+            }
+            Collections.sort(lit,Collections.reverseOrder());//desc
+            if(lit.get(0)>1)
+            {
+
+            }
+            else
+            {
+                 for(Map.Entry<String,Integer> e:map.entrySet())
+            {
+                if(e.getValue()==list.get(0));
+                System.out.println(e.getValue()+" "+ e.getKey());
+                break;
+            }
+
+
+            }
+
+        }
+        
+    }
+    public static void main(String args[] ) throws Exception {
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();sc.nextLine();
+        int matches=sc.nextInt();sc.nextLine();
+        String str;
+        while(T>0)
+        {
+            //for each testcase new hashmap creation
+            LinkedHashMap<String,Integer> map=new LinkedHashMap<>();
+
+            while(matches>0)
+            {
+                str=sc.nextLine();
+                findwinner(str,map);
+
+                
+                matches--;
+            }
+            map.clear();
+            T--;
+        }
+    }
+}

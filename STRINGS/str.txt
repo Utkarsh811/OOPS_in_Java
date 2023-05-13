@@ -1,0 +1,9 @@
+there is a separate memory structure for storing strings called String pool
+There are 2 things to understand about string is String pool and immutability
+
+
+String pool
+immutability
+
+== operator
+.equals method

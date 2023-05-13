@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "code9",
+            "request": "launch",
+            "mainClass": "TcsDigital.code9",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code8",
+            "request": "launch",
+            "mainClass": "TcsDigital.code8",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code7",
+            "request": "launch",
+            "mainClass": "TcsDigital.code7",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "Crucialstuff",
+            "request": "launch",
+            "mainClass": "STRINGS.Crucialstuff",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code6",
+            "request": "launch",
+            "mainClass": "TcsDigital.code6",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code5",
+            "request": "launch",
+            "mainClass": "TcsDigital.code5",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code4",
+            "request": "launch",
+            "mainClass": "TcsDigital.code4",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code3",
+            "request": "launch",
+            "mainClass": "TcsDigital.code3",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code2",
+            "request": "launch",
+            "mainClass": "TcsDigital.code2",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code1",
+            "request": "launch",
+            "mainClass": "TcsDigital.code1",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "SteppingDownStairs",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.SteppingDownStairs",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "Fibomemo",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.Fibomemo",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Fibonacci",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "GetKeyPadCount",
             "request": "launch",
             "mainClass": "Recursion_DP_Backtracking.GetKeyPadCount",
