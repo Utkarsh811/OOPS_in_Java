@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Climbingstairswithvariablejumps",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.Climbingstairswithvariablejumps",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "Rec1",
+            "request": "launch",
+            "mainClass": "R_E_C_U_R_S_I_O_N.Rec1",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "permutations",
+            "request": "launch",
+            "mainClass": "R_E_C_U_R_S_I_O_N.permutations",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code10",
+            "request": "launch",
+            "mainClass": "TcsDigital.code10",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "code9",
             "request": "launch",
             "mainClass": "TcsDigital.code9",
