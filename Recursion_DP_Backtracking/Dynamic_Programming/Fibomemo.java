@@ -6,6 +6,7 @@ import java.util.*;
 public class Fibomemo {
 
   public static int Fibomen(int n, int[] storingbox) {
+    System.out.println("FIB-:" + n);
     //BASE CASE
     if (n == 0 || n == 1) {
       return n;

@@ -4,3 +4,15 @@ lambdas ,we can use functional programming in java.
 ->Enables parallel processing,
 ->easier to use API and libraries.
 ->Readable and concise code.
+
+6
+4
+3
+8
+2
+1
+1
+0
+2
+3
+4

@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Polymorphism.Main",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "Climbingstairswith_minimum_moves",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.Climbingstairswith_minimum_moves",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "ClimbingstairsvariablejumpsbyTabulation",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.ClimbingstairsvariablejumpsbyTabulation",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "four",
+            "request": "launch",
+            "mainClass": "ControlFlowstructure.four",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "three",
+            "request": "launch",
+            "mainClass": "ControlFlowstructure.three",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "two",
+            "request": "launch",
+            "mainClass": "ControlFlowstructure.two",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "one",
+            "request": "launch",
+            "mainClass": "ControlFlowstructure.one",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "Climbingstairswithvariablejumps",
             "request": "launch",
             "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.Climbingstairswithvariablejumps",

@@ -1,0 +1,23 @@
+DATATYPES IN java
+
+PRIMITIVE DATA TYPES                               NON-PRIMITIVE DATA TYPES
+ >>>Integers
+ >byte 8 bits                                                   String
+ >short 16 bits                                                 Array                                                      
+ >int 32 bits                                                   All user defined classes
+ >long 64 bits
+
+ >>>Floating-point
+ >float 32 bits
+ >double 64 bits
+
+ >>>Character 
+ >char 16 bits
+
+ >>>boolean
+ >boolean 1 bits
+
+
+
+
+

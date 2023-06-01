@@ -9,23 +9,20 @@ public class prac {
     for (int i = 0; i < n; i++) {
       arr[i] = scn.nextInt();
     }
-    int paths = countPaths(arr, 0, n);
-    System.out.println(paths);
-    scn.close();
-  }
+    Integer[] dp = new Integer[n + 1];
+    dp[n] = 0;
 
-  public static int countPaths(int[] arr, int index, int len) {
-    if (index == len) {
-      return 1;
-    }
-    int count = 0;
-    for (int jump = 1; jump <= arr[index]; jump++) {
-      if ((jump + index) <= len) {
-        count += countPaths(arr, jump + index, len);
-      } else {
-        break;
+    for (int i = n - 1; i >= 0; i--) {
+      if (arr[i] == 0) continue;
+      int min = Integer.MAX_VALUE;
+      for (int j = 1; j <= arr[i] && i + j < dp.length; j++) {
+        if (dp[i + j] != null) {
+          min = Math.min(min, dp[i + j]);
+        }
       }
+      if (min != Integer.MAX_VALUE) dp[i] = min + 1;
     }
-    return count;
+    System.out.println(dp[0]);
+    scn.close();
   }
 }

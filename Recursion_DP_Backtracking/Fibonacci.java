@@ -15,6 +15,7 @@ public class Fibonacci {
   //static ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(0, 1));
 
   public static int Fib(int n) {
+    System.out.println("FIB-:" + n);
     if (n == 1 || n == 0) {
       return n;
     }
