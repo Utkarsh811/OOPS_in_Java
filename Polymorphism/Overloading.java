@@ -2,6 +2,9 @@ package Polymorphism;
 
 public class Overloading {
 
+  int value;
+  String foxval;
+
   //instance variables
 
   public Overloading() {

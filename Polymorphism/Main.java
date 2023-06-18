@@ -1,6 +1,6 @@
 package Polymorphism;
 
-import javax.sql.rowset.spi.SyncResolver;
+//import javax.sql.rowset.spi.SyncResolver;
 
 public class Main {
 
@@ -18,5 +18,8 @@ public class Main {
     //creating the object
     Overloading ob = new Overloading();
     System.out.println(ob.add(2.2, 2.2));
+
+    Overriding objover = new Overriding();
+    objover.add(8, 8);
   }
 }

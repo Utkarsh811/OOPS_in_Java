@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClimbingStairsMinCost",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.ClimbingStairsMinCost",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "Tribonacci_sequence",
+            "request": "launch",
+            "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.Tribonacci_sequence",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Polymorphism.Main",
