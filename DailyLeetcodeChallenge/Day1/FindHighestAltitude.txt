@@ -1,0 +1,28 @@
+package DailtLeetcodeChallenge;
+//1732. Find the Highest Altitude
+
+
+class Solution {
+ 
+    public int largestAltitude(int[] gain) {
+        int n=gain.length;
+        int[] Alt=new int[n+1];
+
+        Alt[0]=0;
+        int max=0;
+        for(int i=1;i<=n;i++)
+        {
+            Alt[i]=Alt[i-1]+gain[i-1];
+            if(max<Alt[i])
+            {
+                max=Alt[i];
+            }
+        }
+        System.out.println(Arrays.toString(Alt));
+       return max;
+
+       
+        
+    }
+}
+

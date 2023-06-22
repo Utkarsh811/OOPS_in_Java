@@ -29,7 +29,7 @@ Collections.sort(arrayobject, Collections.reverseOrder());  in descending revers
 
 Soring Arrays{
 Arrays.sort(arr)  in ascending
-Arrays.sort(arr, Collections.reverseOrder()); in descending
+Arrays.sort(arr, Collections.reverseOrder()); in descending but it does not work on primitive data type
 
 }
 
