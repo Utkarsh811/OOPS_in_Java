@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GfG",
+            "request": "launch",
+            "mainClass": "GfG",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "ClimbingStairsMinCost",
             "request": "launch",
             "mainClass": "Recursion_DP_Backtracking.Dynamic_Programming.ClimbingStairsMinCost",

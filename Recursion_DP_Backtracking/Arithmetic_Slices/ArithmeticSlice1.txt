@@ -1,0 +1,30 @@
+413. Arithmetic Slices
+
+class Solution {
+    public int numberOfArithmeticSlices(int[] nums) {
+        int[] bucket=new int[nums.length];
+        int sum=0;
+        if(nums.length<3)
+        {
+            return 0;
+        }
+        else
+        {
+        for(int x=2;x<nums.length;x++)
+        {
+            if(nums[x]-nums[x-1]==nums[x-1]-nums[x-2])
+            {
+                bucket[x]=bucket[x-1]+1;
+                sum=sum+bucket[x];
+            }
+            else
+            {
+                bucket[x]=0;
+            }
+        }
+        return sum;
+        }
+
+        
+    }
+}
