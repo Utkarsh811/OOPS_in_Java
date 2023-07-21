@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "code12",
+            "request": "launch",
+            "mainClass": "TcsDigital.code12",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
+            "name": "code11",
+            "request": "launch",
+            "mainClass": "TcsDigital.code11",
+            "projectName": "JAVA_OOPS_588a7426"
+        },
+        {
+            "type": "java",
             "name": "ReverseandStartswith",
             "request": "launch",
             "mainClass": "Problems.ReverseandStartswith",
